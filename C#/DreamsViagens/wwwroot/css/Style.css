@@ -1,0 +1,526 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Poppins&display=swap");
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins' sans-serif;  
+    
+}
+/*
+    --cor0: #F25270 
+    --cor1: #49BF9E 
+    --cor2: #818C7B 
+    --cor3: #F24C27 
+    --cor4: #F24141 
+    --cor5: #464D43 
+    --cor6: #2A2E28
+*/
+
+/*INICIO HEADER*/
+header {
+    background: url(../assets/pexels-asad-photo-maldives-1287460.jpg) no-repeat center;
+    max-width: 100%;
+    height: 60vh;
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.459);
+    background-attachment: fixed;
+    background-size: cover;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(0, 0, 0, .2);  
+
+}
+
+.divLogo{
+    display: contents;
+    justify-content: center;  
+
+}
+.divLinks {
+    /*
+ background-color: rgba(0, 0, 0, .2);
+    */
+
+}
+.divLinks a{
+    display: inline-flex;
+    text-decoration: none;  
+    font-family: 'poppins' sans-serif;  
+    font-weight: bolder;
+    color: rgba(242, 76, 39, 0.795);
+    font-size: 18px;
+    text-transform: uppercase;
+    padding: 25px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.divLinks a:hover{  
+    background-color: rgba(73, 191, 158, 0.822);
+    padding-block: 5px;
+    border-radius: 5px;
+}
+/*FIM HEADER*/
+    /*INICIO PAGE HOME*/
+.mainHome{
+    display: block;
+    padding: 1rem;
+    margin: 1rem;
+    background-color: rgba(251, 208, 208, .2);
+    
+    
+}
+.mainHome h1{
+    text-align: center;
+    font-family: "poppins", sans-serif;
+    color: #F24C27;
+    text-transform: uppercase;    
+    background-color: rgba(73, 191, 158, 0.2);
+    margin-bottom: 10px;
+
+}
+.mainHome li{
+    text-align: center;
+    font-weight: bold;
+    font-family: "poppins", sans-serif;
+
+}
+
+.row{
+    flex-direction: row;
+}
+.container{
+    display: flex;
+    align-self: center;    
+}
+.divTop{
+    margin: 0 3px;
+}
+
+.mainHome iframe{
+    
+    width: 29rem;
+    padding: 5px;
+    border-radius: 7px;
+    
+}
+.chamadaHome{
+    display: flex;
+    justify-items: center;
+    font-family: "poppins", sans-serif;
+    padding: 1rem;
+    margin: 1rem;
+    background-color: rgba(251, 208, 208, .2);
+    
+
+}
+.chamadaHomeCard{
+    display: flex;
+    border-radius: 20px;
+    box-shadow: 2px 5px 5px rgba(242, 76, 39, 0.795);
+    width: 80%;    
+    margin-left: 10rem;
+}
+.chamadaHome img{
+    display: block;
+    border-radius: 10px;
+    height: 45vh;
+    width: 100%;    
+}
+
+.chamadaHometxt{
+    text-align: center;
+    margin-top:  10px;
+    margin-left: 7rem;
+    padding-top: 1.5rem;
+}
+
+
+/*FIM PAGE HOME*/
+
+
+/*INICIO PAGE DESTINO*/
+
+
+.mainPromocao{
+    margin: 0;
+    padding: 0;
+    font-family: "poppins",sans-serif;
+
+}
+.mainPromocao h1{
+    color: #F24C27;
+    background-color: rgba(73, 191, 158, 0.2);
+    text-align: center;
+    text-transform: uppercase;
+    margin: 10px 5px;
+    box-shadow: 3px 0 10px 3px rgba(0, 0, 0, 0.459);
+    padding: 10px 10px;
+}
+
+#mainH1{
+       margin:10px;
+}
+
+
+#mainH1:hover{
+    color: #49BF9E;
+}
+
+.promocao-section{
+    height: 90vh;   
+    display: flex;
+    box-shadow: 4px 0 10px 3px rgba(0, 0, 0, 0.459);
+
+}
+
+.destino{
+    flex: 1;
+    overflow: hidden;
+    cursor: pointer;
+    position: relative;
+    transition: .6s;
+}
+
+.destino:hover{
+    flex: 3;
+}
+
+.destino-pic{
+    position: absolute;
+    height: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    filter: grayscale(80%);
+    transition: .3s;
+}
+
+.destino:hover .destino-pic{
+    filter: grayscale(0);
+    
+}
+
+.destino-info{
+    position: absolute;
+    bottom: 10px;
+    text-align: center;
+    width: 100%;
+    opacity: 0;
+    transition: .2s;
+    background-color: rgba(0, 0, 0, .3); 
+}
+.destino-info h2{
+    background-color: rgba(242, 76, 39, 0.795);
+    border-radius: 10px;
+}
+
+.destino:hover .destino-info{
+    opacity: 1;
+    bottom: 60px;
+    transition-delay: .6s;
+}
+
+.destino-info h2{
+    font-size: 20px;
+    color: #49BF9E  ;
+    font-weight: bolder;
+}
+
+.destino-info p{
+    color: #F24C27;
+    font-style: italic;
+    margin-top: 8px;
+    margin-bottom: 20px;
+}
+
+.btncompra a{
+    display: inline-block;
+    width: 80px;
+    height: 30px;
+    color: #464D43  ;
+    background-color: #49BF9E;
+    line-height: 30px;
+    border-radius: 10px;
+    margin: 0 6px;
+    font-size: 16px;
+    transition: .3s linear;
+}
+
+.btncompra a:hover{
+    color: #F24141  ;
+    background-color: transparent;
+    transform: scale(1.5);
+}
+
+/*FIM PAGE PROMOÇÃO*/
+
+/*INICIO PAGE DESTINO*/
+.mainDestino {
+    box-sizing: border-box;
+    font-size: 62.5%;
+  }
+  
+.section1 {
+    background-color: #eee;
+    border-radius: 1em;
+    font-family: "Poppins", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 60vh;
+    padding-top: 3em;
+    padding-bottom: 3em;
+  }
+  
+  .grid {
+    display: grid;
+    width: 118em;
+    grid-gap: 7em;
+    grid-template-columns: repeat(auto-fit, minmax(32em, 1fr));
+    align-items: start;
+  }
+  
+  .grid-item {
+    background-color: #fff;
+    border-radius: 0.4rem;
+    overflow: hidden;
+    box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: 0.2s;
+  }
+  
+  .grid-item:hover {
+    transform: translateY(-0.5%);
+    box-shadow: 0 4rem 8rem rgba(0, 0, 0, 0.5);
+  }
+   
+  .card-img {
+    display: block;
+    width: 100%;
+    height: 14rem;
+    object-fit: cover;
+  }
+  
+  .card-content {
+    padding: 1rem;
+  }
+  
+  .card-header {
+    font-size: 24px;
+    font-weight: 500;
+    color: #0d0d0d;
+    margin-bottom: 0.5rem;
+    line-height: 1.2;
+
+  }
+  
+  .card-text {
+    font-size: 16px;
+    --letter-spacing: 0.06rem;
+    line-height: 1.2;
+    color: #3d3d3d;
+    margin-bottom: 1rem;
+  }
+  
+  .card-btn {
+    display: block;
+    width: 85%;
+    padding: 1rem;
+    font-size: 1.4rem;
+    text-decoration: none;
+    text-align: center;
+    color: #49BF9E;
+    background-color: #d8e0fd;
+    border: none;
+    border-radius: 0.4rem;
+    transition: 0.2s;
+    cursor: pointer;
+    letter-spacing: 0.1rem;    
+  }
+  
+  .card-btn span {
+    margin-left: 1rem;
+    transition: 0.2s;
+  }
+  
+  .card-btn:hover,
+  .card-btn:active {
+    background-color: #c2cffc;
+  }
+  
+  .card-btn:hover span,
+  .card-btn:active span {
+    margin-left: 1.5rem;
+
+  }
+  
+  @media only screen and (max-width: 60em) {
+    body {
+      padding: 3rem;
+    }
+  
+    .grid {
+      grid-gap: 3rem;
+    }
+  }
+  
+/*FIM PAGE DESTINO*/
+
+/*INICIO PAGE CONTATO*/
+
+
+/*FIM PAGE CONTATO*/
+.mainContato{
+    margin: 0;
+    padding: 0;
+}
+.form1{
+    background-color: rgba(0, 0, 0, .02);
+   
+    margin-top: 20px;
+    display: flex;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px 5px black;
+    
+}
+.form1 video{
+    position: relative;
+    z-index: -1;    
+    width:80%;
+    height:300px;    
+  
+}
+.form2{
+    background-color: rgba(0, 0, 0, .02);
+}
+.form3{
+    display: block;
+    width:400px;
+    height:400px;
+    
+
+    
+}
+/*INICIO FOOTER*/
+footer {
+    height: 70vh;
+	font-family: poppins;
+	color: #F24C27;
+    font-size: 14px;
+    text-align: center;
+    background-color: rgb(72, 72, 80);  
+}
+ 
+
+.stretch {
+	align-items: stretch;
+}
+
+/* Flex Container */
+.container {
+	margin: 0 auto;
+	display: flex;
+} 
+ 
+.l-footer p {
+    text-align: justify;
+    padding-top: 10px;
+    color: #49BF9E ;
+    } 
+    
+.b-footer {
+    text-align: center;
+    color: #49BF9E ;
+    padding-top: 10px;
+    background-color: rgb(72, 72, 80);  
+
+}
+.r-footer{
+    padding: 10px;
+    border: none;
+}
+          
+.box a {
+    display: block;
+    color: #49BF9E ;
+    padding-block: 10px;
+}    
+.box p{
+    text-align: center;
+    color: #49BF9E ;
+    padding-top: 20px;
+}
+   
+.footer a {
+    text-decoration: none;
+    }
+  
+/* Flex Item */
+.item {
+	flex: 1;
+	margin: 10px;
+	padding: 0 10px;
+    padding-bottom: 10px;
+    padding-top: 20px;	
+	text-align: center;
+	font-size: 15px;
+}
+
+div h2 {
+	text-align: center;
+	margin: 3px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+	font-size: 16px;
+    text-transform: uppercase;
+	font-weight: bolder;
+    border: solid 2px;    
+}
+footer span{
+    justify-items: center;
+    display: block;
+    border: solid 2px;
+    padding: 5px;
+    position: relative;
+    
+
+}
+footer span a{
+    text-decoration: none;
+    color: #49BF9E;
+    border: solid 2px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-top: 20px;
+    padding-bottom: 10px;    
+
+}
+.boxRedesSocias{
+    padding: 10px 50px;
+}
+.social-icon{
+font-size: 30px;
+color: #49BF9E;
+}
+.social-icon :hover{
+    color:#F24C27
+}
+.iconAdd{
+    font-size: 20px;
+    color: #49BF9E;
+}
+
+div .box p{
+    padding: 5px;
+    
+}
+.h-box :hover{
+    color:#F24C27
+
+}
+@media screen and (min-width: 600px) {
+footer > * {display: inline-block;
+}}
+
+/*FIM FOOTER*/
+
